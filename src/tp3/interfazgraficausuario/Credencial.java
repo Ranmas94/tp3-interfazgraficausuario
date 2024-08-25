@@ -4,6 +4,7 @@
  */
 package tp3.interfazgraficausuario;
 
+import java.awt.Color;
 import javax.swing.JOptionPane;
 
 /**
@@ -17,6 +18,7 @@ public class Credencial extends javax.swing.JFrame {
      */
     public Credencial() {
         initComponents();
+        getContentPane().setBackground(Color.red);
     }
 
     /**

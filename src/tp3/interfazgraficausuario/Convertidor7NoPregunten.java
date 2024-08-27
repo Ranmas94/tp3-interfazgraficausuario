@@ -40,7 +40,7 @@ public class Convertidor7NoPregunten extends javax.swing.JFrame {
         setTitle("TP3EJER2 - C to F");
 
         jlConvertidorTemp.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
-        jlConvertidorTemp.setText("Convertidor de Temperatura");
+        jlConvertidorTemp.setText("Conversor de temperatura");
         jlConvertidorTemp.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jlIngreseTemp.setText("Ingrese temperatura en grados Celsius");
@@ -95,7 +95,7 @@ public class Convertidor7NoPregunten extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addContainerGap(52, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

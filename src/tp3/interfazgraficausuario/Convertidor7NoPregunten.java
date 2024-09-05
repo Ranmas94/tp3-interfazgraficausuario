@@ -30,6 +30,7 @@ public class Convertidor7NoPregunten extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jInternalFrame1 = new javax.swing.JInternalFrame();
         jPanel1 = new javax.swing.JPanel();
         jlConvertidorTemp = new javax.swing.JLabel();
         jlIngreseTemp = new javax.swing.JLabel();
@@ -39,11 +40,16 @@ public class Convertidor7NoPregunten extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("TP3EJER2 - C to F");
 
-        jlConvertidorTemp.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        jInternalFrame1.setVisible(true);
+
+        jlConvertidorTemp.setFont(new java.awt.Font("Bookman Old Style", 1, 24)); // NOI18N
         jlConvertidorTemp.setText("Conversor de temperatura");
         jlConvertidorTemp.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jlIngreseTemp.setText("Ingrese temperatura en grados Celsius");
+        jlIngreseTemp.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jlIngreseTemp.setText("Ingrese la temperatura en grados Celcius:");
+
+        jtfUsuario.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
         jbConvertirBoton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icons8-flecha-circular-48.png"))); // NOI18N
         jbConvertirBoton.setText("Convertir");
@@ -60,32 +66,48 @@ public class Convertidor7NoPregunten extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(176, 176, 176)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jbConvertirBoton)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(31, 31, 31)
-                                .addComponent(jtfUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(35, 35, 35)
+                        .addComponent(jlConvertidorTemp))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(138, 138, 138)
+                        .addGap(55, 55, 55)
                         .addComponent(jlIngreseTemp))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(jlConvertidorTemp)))
-                .addContainerGap(109, Short.MAX_VALUE))
+                        .addGap(170, 170, 170)
+                        .addComponent(jtfUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(42, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jbConvertirBoton)
+                .addGap(136, 136, 136))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(54, 54, 54)
+                .addGap(27, 27, 27)
                 .addComponent(jlConvertidorTemp)
-                .addGap(57, 57, 57)
+                .addGap(18, 18, 18)
                 .addComponent(jlIngreseTemp)
                 .addGap(18, 18, 18)
                 .addComponent(jtfUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(29, 29, 29)
                 .addComponent(jbConvertirBoton)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(39, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
+        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
+        jInternalFrame1Layout.setHorizontalGroup(
+            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 12, Short.MAX_VALUE))
+        );
+        jInternalFrame1Layout.setVerticalGroup(
+            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -93,25 +115,26 @@ public class Convertidor7NoPregunten extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(52, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jInternalFrame1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(jInternalFrame1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbConvertirBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbConvertirBotonActionPerformed
         // Las modificaciones al codigo desde el boton convertir
         Double tempc = new Double(jtfUsuario.getText());
-        JOptionPane.showMessageDialog(this, "La temperatura en grados farenheit es: "+ (tempc * 9/5 + 32));
+        JOptionPane.showMessageDialog(this, "La temperatura ingresada equivale a "+ (tempc * 9/5 + 32) + " grados Fahrenheit.");
     }//GEN-LAST:event_jbConvertirBotonActionPerformed
 
     /**
@@ -150,6 +173,7 @@ public class Convertidor7NoPregunten extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton jbConvertirBoton;
     private javax.swing.JLabel jlConvertidorTemp;
